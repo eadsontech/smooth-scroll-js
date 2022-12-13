@@ -33,21 +33,11 @@ const logo = document.querySelector(".logo");
 window.addEventListener("scroll", function(){
     const scrollHeight = window.scrollY;
     const navHeight = navbar.getBoundingClientRect().height;
+
     if(scrollHeight > navHeight){
         navbar.classList.add("fixed-nav");
-
-        // change logo color
-        let x = window.matchMedia("(min-width: 800px)");
-        if(x){
-
-            logo.style.color = "black";
-        }
     } else{
         navbar.classList.remove("fixed-nav");
-        if(!x){
-
-            logo.style.color = "white";
-        }
     }
 
     if(scrollHeight > 500){
@@ -56,6 +46,7 @@ window.addEventListener("scroll", function(){
         topLink.classList.remove("show-link");
     }
 });
+
 // ********** smooth scroll ************
 // select links
 

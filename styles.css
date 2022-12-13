@@ -234,7 +234,9 @@ nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
 }
-
+.fixed-nav .logo{
+    color: #000;
+}
 .fixed-nav .links a {
     color: var(--clr-grey-1);
 }
